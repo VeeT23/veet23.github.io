@@ -96,9 +96,9 @@ body {
 
 /* Hero content sits above overlay */
 .hero-content {
-  position: relative;
-  text-align: center;
-  padding: 2rem;
+    position: relative;
+    text-align: center;
+    padding: 2rem;
 
 }
 
@@ -141,13 +141,37 @@ main {
     color: #cbd5f5;
 }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
+}
+
+.card-header h2 {
+    margin: 0; /* override default spacing */
+}
+
+.card-more {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.card-more:hover {
+    color: #f8fafc;
+}
+
+
 /* Subcard style for project page */
 .subcard {
-    background: rgba(255, 255, 255, 0.04);     
-    border-radius: 12px;        
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
-    padding: 16px 20px;              /* space inside the card */
-    margin: 12px 0;                  /* spacing between subcards */
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 16px 20px;
+    /* space inside the card */
+    margin: 12px 0;
+    /* spacing between subcards */
 }
 
 /* ===== Skill Icons ===== */
@@ -156,15 +180,17 @@ main {
 .skills-row {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;           /* wrap on smaller screens */
-    gap: 1rem;               /* space between cards */
+    flex-wrap: wrap;
+    /* wrap on smaller screens */
+    gap: 1rem;
+    /* space between cards */
     width: 100%;
 }
 
 
 
 .icon-card {
-     flex: 0 1 64px;
+    flex: 0 1 64px;
     width: 64px;
     height: 64px;
 
@@ -186,7 +212,7 @@ main {
 
 /* Hover effect */
 .icon-card:hover img {
-    transform: scale(1.1);     
+    transform: scale(1.1);
 }
 
 /* ===== Lists ===== */
@@ -211,19 +237,22 @@ li {
 .project-row {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;           /* wrap on smaller screens */
-    gap: 1rem;               /* space between cards */
+    flex-wrap: wrap;
+    /* wrap on smaller screens */
+    gap: 1rem;
+    /* space between cards */
     width: 100%;
 }
 
 /* ===== Image Cards ===== */
 .image-card {
     position: relative;
-    flex: 1 1 250px;           /* min width 250px, grows equally */
+    flex: 1 1 250px;
+    /* min width 250px, grows equally */
     height: 200px;
     overflow: hidden;
     border-radius: 12px;
-   
+
 }
 
 /* Image on top */
@@ -257,7 +286,8 @@ li {
 /* Hover effect */
 .image-card:hover img {
     opacity: 0;
-    transform: scale(1.05);      /* optional subtle zoom on hover */
+    transform: scale(1.05);
+    /* optional subtle zoom on hover */
 }
 
 /* ===== Links ===== */
@@ -285,14 +315,17 @@ footer {
     }
 
     .project-row {
-        flex-direction: column;   /* stack cards vertically on small screens */
+        flex-direction: column;
+        /* stack cards vertically on small screens */
     }
 
     .image-card {
-        width: 100%;             /* take full width when stacked */
+        width: 100%;
+        /* take full width when stacked */
     }
 
     .skills-row {
-        flex-direction: row;   /* override */
+        flex-direction: row;
+        /* override */
     }
 }
