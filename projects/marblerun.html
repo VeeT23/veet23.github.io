@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/gizmo.svg" type="image/x-icon">
     <title>Vee Tobias – Marble Run</title>
-    <meta name="description"
-        content="Marble Run by Vee Tobias.">
+    <meta name="description" content="Marble Run by Vee Tobias.">
     <script src="/scripts/navbar.js" defer></script>
     <link rel="stylesheet" href="/style.css">
 </head>
@@ -17,39 +16,88 @@
 
     <!-- ===== Parallax Hero ===== -->
     <header class="hero" style="background-image: url('/assets/MarbleRun.jpg');">
-    <div class="hero-content">
-        <h1>Marble Run</h1>
-        <p class="subtitle">2026</p>
-    </div>
-</header>
+        <div class="hero-content">
+            <h1>Marble Run</h1>
+            <p class="subtitle">2026</p>
+        </div>
+    </header>
     <main>
         <section class="card">
             <h2>Overview</h2>
-            <p>
-                The SWSC Science competition encompossing several events. My most notable win is from the Marble run event.
-                In this event students are to construct a course where a marble travels along a track. The longest running track wins.
-                Common stratagies are to create a series of switch-back tracks, maximizing total distance. Reducing the angle of the tracks to reduce acceleration also benefits run times.
-                Common issues with these stratagies is the time-cost and risk of marbles getting stuck from friction.
+            <div class="subcard">
+                <p>
+                    The SWSC Science Competition includes several engineering-focused events that I’ve participated in,
+                    with
+                    my most notable result coming from the Marble Run event.
 
-                My solution is a mechanically governed system to transport the marble.
-            </p>
+                </p>
+            </div>
+            <div class="subcard">
+                <p>
+                    The goal of the event is to design a course that keeps a marble moving for as long as possible. *No
+                    Electronics*. Most
+                    competitors rely on long, shallow switchback tracks to maximize distance and reduce acceleration.
+                    While
+                    effective in theory, these designs tend to be time-consuming to build and are prone to
+                    friction-related
+                    failures, where marbles become stuck.
+                </p>
+            </div>
+            <div class="subcard">
+                <p>
+                    My approach instead uses a mechanically governed system to transport the marble, prioritizing
+                    controlled
+                    motion and reliability over raw track length.
+                </p>
+            </div>
+
         </section>
 
         <section class="card">
             <h2>The Mechanism</h2>
-            <p>
-                The main mechanism of the marble run is a 3d printed lift system.
-                Using a claw, the mechanism draws a pulley, raising the the marble to a higher landing platform.
-                Once raised, the claw uses an additional mechanism to release the marble.
+            <div class="subcard">
+                <p>
+                    The primary feature of the marble run is a custom 3D-printed lift mechanism designed to vertically
+                    transport the marble in a controlled and repeatable manner.
+                </p>
+            </div>
+            <div class="subcard">
+                <p>
+                    The system operates by drawing a pulley that raises a bucket-style claw. Once the marble is
+                    captured,
+                    the pulley lifts the claw to a higher landing platform. At the top of the travel, a secondary
+                    mechanical
+                    linkage automatically releases the marble onto the platform without requiring external intervention.
+                </p>
+            </div>
+            <div class="subcard">
+                <p>
+                    The lifting speed of the pulley is regulated by an escapement mechanism, similar in principle to
+                    those
+                    used in mechanical clocks. This allows the marble’s motion to be governed mechanically rather than
+                    relying on gravity-driven track geometry, providing consistent timing and reducing the risk of
+                    friction-related stalls.
+                </p>
+            </div>
+        </section>
 
+        <section class="card">
+            <h2>The Mechanism</h2>
+            <div class="subcard">
+                <p>
 
-                The mechanism uses:
-                <ul>
-                    <li>A driving weight -> provides constant force</li>
-                    <li>A gear train -> amplifies the number of ticks per rotation</li>
-                    <li>An escapment -> governs the angular velocity of the mechanism</li>
-                </ul>
-            </p>
+                </p>
+            </div>
+            <div class="subcard">
+                <p>
+
+                </p>
+            </div>
+            <div class="subcard">
+                <p>
+
+                </p>
+            </div>
         </section>
     </main>
 
